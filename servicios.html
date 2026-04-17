@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FL Inversiones & Mercados</title>
+  <link rel="stylesheet" href="css/estilos.css">
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    body {
+      background-image: url("img/Servicios-marmolado.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f6f5;
+}
+
+.logo img {
+  height: 100px; /* Cambiá este valor para hacerlo más chico o más grande */
+  max-height: 70px;
+  width: auto;
+}
+
+  nav a {
+    color: rgba(14, 1, 1, 0.918);
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+   
+  }
+
+  .abrir-cuenta {
+    background-color: rgba(3, 11, 23, 0.113);
+    color: #00050b;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .abrir-cuenta:hover {
+    background-color: #f0eaea78;
+  
+    }
+
+ .servicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 15px; /* antes era 30px */
+  padding: 200px;
+}
+
+
+    .servicio img {
+      width: 300px;
+      border-radius: 50px;
+    }
+
+    .servicio-texto {
+      flex: 1;
+       max-width: 500px;
+    }
+
+    .servicio h2 {
+      margin-bottom: 10px;
+      color: #0056b3;
+    }
+
+    .servicio:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 768px) {
+      .servicio {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .servicio:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .servicio img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO UNIFICADO -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo FL" />
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="comunidad.html">Comunidad</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="abrir-cuenta" href="https://www.balanz.com/abrir-cuenta-2.aspx?reference=flanusse@balanz.com">Abrir Cuenta</a>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+  <div class="servicio">
+    <div class="servicio-texto">
+      <h2>Inversión Personalizada</h2>
+      <p>Diseñamos carteras de inversión a medida según tu perfil, objetivos y etapa de vida. Te acompañamos con análisis y recomendaciones específicas.</p>
+    </div>
+    <img src="img/inversion-personal.png" alt="Inversión Personalizada">
+  </div>
+
+  <div class="servicio">
+    <div class="servicio-texto">
+      <h2>Planificación Fiscal</h2>
+      <p>Te ayudamos a optimizar tu carga tributaria con una mirada legal, clara y estratégica. Invertir con inteligencia fiscal mejora tus rendimientos reales.</p>
+    </div>
+    <img src="img/planificacion-fiscal.png" alt="Planificación Fiscal">
+  </div>
+
+  <div class="servicio">
+    <div class="servicio-texto">
+      <h2>Soluciones para Empresas</h2>
+      <p>Acompañamos a empresas de todos los tamaños en el manejo de liquidez, inversiones de corto y largo plazo, y estrategias fiscales corporativas.</p>
+    </div>
+    <img src="img/empresas.png" alt="Soluciones para Empresas">
+  </div>
+
+</main>
+
+
+</body>
+</html>
